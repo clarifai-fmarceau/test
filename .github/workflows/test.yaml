@@ -20,5 +20,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Test secret value
         env:
-          TEST_SECRET: ${{ secrets.TEST_SECRET }}
-        run: echo "Test secret value: $TEST_SECRET"
+          TEST_SECRET: ${{ secrets.test }}
+        run: |
+          echo "Test secret value: $TEST_SECRET"
